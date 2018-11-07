@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark: rgb(25, 52, 65);
+  --medium-dark: rgb(62, 96, 111);
+  --medium: rgb(145, 170, 157);
+  --medium-light: rgb(209, 219, 189);
+  --light: rgb(252, 255, 245);
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--dark);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+figcaption {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "landing landing landing landing"
+    "movies  movies  movies  movies"
+    "header  header  header  header"
+    "main    main    main    main"
+    "footer  footer  footer  footer"
+}
+
+#landing-page {
+  grid-area: landing;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ghibili-logo {
+  position: absolute;
+  right: 0;
+  padding: 2rem;
+  align-self: flex-end;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+#img-div {
+  grid-area: movies;
+  display: grid;
+  background: var(--light);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+#img-div img {
+  box-shadow: var(--shadow);
+}
+
+#img-div img:hover {
+  transform: scale(1.05);
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'PT Serif', serif;
+  background: var(--medium);
+  color: var(--light);
+}
+
+#main {
+  grid-area: main;
+  padding: 3rem;
+  background: var(--medium-light);
+  border-top: 1px solid rgb(128, 128, 128, 0.1);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "miyazaki main main main takahata";
+}
+
+#main img{
+  width: 80%;
+  max-width: 730px;
+  height: auto;
+  box-shadow: var(--shadow);
+}
+
+#portrait-1 {
+  grid-area: miyazaki;
+}
+
+#tribute-info {
+  grid-area: main;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.2rem;
+}
+
+
+#portrait-2 {
+  grid-area: takahata;
+  position: relative;
+}
+
+#takahata-image {
+  position: absolute;
+  right: 0px;
+}
+
+
+footer {
+  grid-area: footer;
+  background: var(--dark);
+  color: white;
+  border-top: 1px solid rgb(128, 128, 128, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: .8rem;
+}
+
+@media (max-width: 768px) {
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "miyazaki takahata"
+                         "main     main"
+  }
+
+  #tribute-info {
+    margin: 2rem;
+  }
+}
+
+@media(max-width: 500px) {
+
+  #img-div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  header > h1 {
+    font-size: 1.5rem;
+  }
+
+  #tribute-info {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+}
