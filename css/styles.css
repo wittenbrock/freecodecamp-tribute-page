@@ -21,7 +21,7 @@
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--dark);
+  background: black;
 }
 
 img {
@@ -69,24 +69,23 @@ a:hover {
     "landing landing landing landing"
     "movies  movies  movies  movies"
     "header  header  header  header"
-    "main    main    main    main"
+    "bio     bio     bio     bio"
     "footer  footer  footer  footer";
 }
 
 #landing-page {
   grid-area: landing;
-  background: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 #ghibili-logo {
   position: absolute;
   right: 0;
+  top: 75%;
   padding: 2rem;
-  align-self: flex-end;
-  justify-content: flex-end;
   width: 20%;
 }
 
@@ -120,7 +119,24 @@ a:hover {
   ========================================
 */
 
-header {
+#ghibili-description {
+  grid-area: bio;
+  padding: 3rem;
+  background: var(--medium-light);
+  border-top: 1px solid rgb(128, 128, 128, 0.1);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "miyazaki main main main takahata";
+}
+
+#ghibili-description img{
+  width: 80%;
+  max-width: 730px;
+  height: auto;
+  box-shadow: var(--shadow);
+}
+
+#title {
   grid-area: header;
   text-align: center;
   display: flex;
@@ -131,23 +147,6 @@ header {
   background: var(--medium);
   color: var(--light);
 }
-
-/* #main {
-  grid-area: main;
-  padding: 3rem;
-  background: var(--medium-light);
-  border-top: 1px solid rgb(128, 128, 128, 0.1);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "miyazaki main main main takahata";
-}
-
-#main img{
-  width: 80%;
-  max-width: 730px;
-  height: auto;
-  box-shadow: var(--shadow);
-} */
 
 #portrait-1 {
   grid-area: miyazaki;
