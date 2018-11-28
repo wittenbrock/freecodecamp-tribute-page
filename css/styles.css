@@ -121,28 +121,23 @@ a:hover {
 
 #ghibili-description {
   grid-area: bio;
-  padding: 3rem;
   background: var(--medium-light);
   border-top: 1px solid rgb(128, 128, 128, 0.1);
+  padding-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: "miyazaki main main main takahata";
+  grid-template-areas: "hd       hd   hd   hd   hd"
+                       "miyazaki info info info takahata";
 }
 
-#ghibili-description img{
-  width: 80%;
-  max-width: 730px;
-  height: auto;
-  box-shadow: var(--shadow);
+#ghibili-description header{
+  grid-area: hd;
+  margin-bottom: 5rem;
 }
 
 #title {
-  grid-area: header;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   font-family: 'PT Serif', serif;
   background: var(--medium);
   color: var(--light);
@@ -153,9 +148,20 @@ a:hover {
 }
 
 #tribute-info {
-  grid-area: main;
+  grid-area: info;
   font-family: 'Slabo 27px', serif;
   font-size: 1.2rem;
+}
+
+#tribute-info p {
+  margin-bottom: 1.5rem;
+}
+
+#ghibili-description img{
+  width: 80%;
+  max-width: 730px;
+  height: auto;
+  box-shadow: var(--shadow);
 }
 
 #portrait-2 {
