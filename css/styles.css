@@ -157,7 +157,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-#ghibili-description img{
+#ghibili-description img {
   width: 80%;
   max-width: 730px;
   height: auto;
@@ -199,18 +199,43 @@ footer {
 */
 
 @media (max-width: 768px) {
-  #main {
+  #ghibili-description  {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "miyazaki takahata"
-                         "main     main"
+    grid-template-areas: "hd       hd"
+                         "miyazaki takahata"
+                         "info     info"
+  }
+
+  #ghibili-description img {
+    width: 60%;
+  }
+
+  #portrait-1 {
+    margin-left: 5rem;
+  }
+
+  #portrait-2 {
+    margin-right: 5rem;
   }
 
   #tribute-info {
     margin: 2rem;
+    margin-bottom: 0;
   }
 }
 
 @media(max-width: 500px) {
+  #ghibili-description {
+    padding-bottom: 2rem;
+  }
+
+  #ghibili-description header{
+    margin-bottom: 2rem;
+  }
+
+  #ghibili-description img {
+    width: 80%;
+  }
 
   #img-div {
     grid-template-columns: repeat(3, 1fr);
@@ -219,12 +244,13 @@ footer {
     padding: 2rem;
   }
 
-  header > h1 {
+  #title {
     font-size: 1.5rem;
   }
 
   #tribute-info {
     font-size: 1.1rem;
     margin: 1rem;
+    margin-bottom: 0;
   }
 }
