@@ -1,3 +1,9 @@
+/*
+  ========================================
+  Global
+  ========================================
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -24,10 +30,6 @@ img {
   height: auto;
 }
 
-figcaption {
-  display: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -40,6 +42,12 @@ a:hover {
   text-decoration: underline;
 }
 
+/*
+  ========================================
+  Screen Reader Only Class
+  ========================================
+*/
+
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -49,14 +57,20 @@ a:hover {
   overflow: hidden;
 }
 
-.wrapper {
+/*
+  ========================================
+  Landing Page
+  ========================================
+*/
+
+#main {
   display: grid;
   grid-template-areas:
     "landing landing landing landing"
     "movies  movies  movies  movies"
     "header  header  header  header"
     "main    main    main    main"
-    "footer  footer  footer  footer"
+    "footer  footer  footer  footer";
 }
 
 #landing-page {
@@ -76,6 +90,12 @@ a:hover {
   width: 20%;
 }
 
+/*
+  ========================================
+  Movies Section
+  ========================================
+*/
+
 #img-div {
   grid-area: movies;
   display: grid;
@@ -94,6 +114,12 @@ a:hover {
   transform: scale(1.05);
 }
 
+/*
+  ========================================
+  Studio Ghibili Description
+  ========================================
+*/
+
 header {
   grid-area: header;
   text-align: center;
@@ -106,7 +132,7 @@ header {
   color: var(--light);
 }
 
-#main {
+/* #main {
   grid-area: main;
   padding: 3rem;
   background: var(--medium-light);
@@ -121,7 +147,7 @@ header {
   max-width: 730px;
   height: auto;
   box-shadow: var(--shadow);
-}
+} */
 
 #portrait-1 {
   grid-area: miyazaki;
@@ -133,7 +159,6 @@ header {
   font-size: 1.2rem;
 }
 
-
 #portrait-2 {
   grid-area: takahata;
   position: relative;
@@ -144,6 +169,11 @@ header {
   right: 0px;
 }
 
+/*
+  ========================================
+  Footer
+  ========================================
+*/
 
 footer {
   grid-area: footer;
@@ -156,6 +186,12 @@ footer {
   padding: 1rem;
   font-size: .8rem;
 }
+
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
 
 @media (max-width: 768px) {
   #main {
