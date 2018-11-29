@@ -95,7 +95,7 @@ a:hover {
   ========================================
 */
 
-#img-div {
+#movies {
   grid-area: movies;
   display: grid;
   background: var(--light);
@@ -105,11 +105,11 @@ a:hover {
   padding: 2rem;
 }
 
-#img-div img {
+#movies img {
   box-shadow: var(--shadow);
 }
 
-#img-div img:hover {
+#movies img:hover {
   transform: scale(1.05);
 }
 
@@ -237,7 +237,7 @@ footer {
     width: 80%;
   }
 
-  #img-div {
+  #movies {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 2rem;
