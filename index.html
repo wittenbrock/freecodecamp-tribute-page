@@ -1,91 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif:700%7CSlabo+27px"
+      rel="stylesheet"
+    />
+    <title>Studio Ghibili Tribute Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:700%7CSlabo+27px" rel="stylesheet">
-  <title>Studio Ghibili</title>
-</head>
+  <body>
+    <main class="main">
+      <!-- Landing Page -->
+      <section class="landing-page">
+        <h1 class="screen-reader-only">Studio Ghibili Tribute Page</h1>
+        <figure>
+          <figcaption class="img-caption screen-reader-only">
+            An image slideshow that shows scenes from various Studio Ghibili
+            movies.
+          </figcaption>
+          <img
+            class="ghibili-logo"
+            src="assets/ghibili-icon-white.png"
+            alt="Studio Ghibili's Logo"
+          />
+          <img
+            class="slide-image"
+            src="assets/slide-1.jpg"
+            alt="The Borrowers Arrietty"
+          />
+          <img
+            class="slide-image"
+            src="assets/slide-2.jpeg"
+            alt="Princess Mononoke"
+          />
+          <img
+            class="slide-image"
+            src="assets/slide-3.png"
+            alt="Kiki's Delivery Service"
+          />
+          <img
+            class="slide-image"
+            src="assets/slide-4.png"
+            alt="Spirited Away"
+          />
+          <img
+            class="slide-image"
+            src="assets/slide-5.png"
+            alt="Nausicaa and the Valley of the Wind"
+          />
+          <img
+            class="slide-image"
+            src="assets/slide-6.jpg"
+            alt="Howl's Moving Castle"
+          />
+        </figure>
+      </section>
 
-<body>
+      <!-- Movies -->
+      <section class="movies">
+        <h2 class="screen-reader-only">Studio Ghibili Movies</h2>
+        <img src="assets/movie-1.jpg" alt="Spirited Away" />
+        <img src="assets/movie-2.jpg" alt="Totoro" />
+        <img src="assets/movie-3.jpg" alt="Princess Mononoke" />
+        <img src="assets/movie-4.jpg" alt="Grave of the Fireflies" />
+        <img src="assets/movie-5.jpg" alt="Ponyo" />
+        <img src="assets/movie-6.jpg" alt="Howl's Moving Castle" />
+        <img src="assets/movie-7.jpg" alt="Castle in the Sky" />
+        <img src="assets/movie-8.jpg" alt="Porco Rosso" />
+        <img
+          src="assets/movie-9.jpg"
+          alt="Nausicaa and the Valley of the Wind"
+        />
+        <img src="assets/movie-10.jpg" alt="Kiki's Delivery Service" />
+        <img src="assets/movie-11.jpg" alt="The Cat Returns" />
+        <img src="assets/movie-12.jpg" alt="Pom Poko" />
+      </section>
 
-  <main id="main">
+      <!-- Studio Ghibili Description-->
+      <section class="ghibili-description">
+        <header>
+          <h2 class="title">The Creators Who Defined a Generation</h2>
+        </header>
+        <div class="portrait-container">
+          <!-- Hayao Miyazaki Portrait -->
+          <figure>
+            <img
+              class="portrait"
+              src="assets/hayao-miyazaki.png"
+              alt="Hayao Miyazaki"
+            />
+            <figcaption class="screen-reader-only">
+              A portrait picture of Studio Ghibili co-founder, Hayao Miyazaki.
+            </figcaption>
+          </figure>
+          <!-- Isao Takahata Portrait -->
+          <figure>
+            <img
+              class="portrait"
+              src="assets/isao-takahata.png"
+              alt="Isao Takahata"
+            />
+            <figcaption class="screen-reader-only">
+              A portrait picture of Studio Ghibili co-founder, Isao Takahata.
+            </figcaption>
+          </figure>
+        </div>
 
-    <!-- Landing Page -->
-    <header id="landing-page">
-      <h1 class="sr-only">Studio Ghibili Tribute Page</h1>
-      <figure id="img-div">
-        <figcaption id="img-caption" class="sr-only">An image slideshow that shows scenes from various Studio Ghibili movies.</figcaption>
-        <img id="ghibili-logo" src="css/pictures/ghibili-icon-white.png" alt="Studio Ghibili's Logo">
-        <img id="image" class="slide-image" src="css/pictures/slide-1.jpg" alt="The Borrowers Arrietty">
-        <img class="slide-image" src="css/pictures/slide-2.jpeg" alt="Princess Mononoke">
-        <img class="slide-image" src="css/pictures/slide-3.png" alt="Kiki's Delivery Service">
-        <img class="slide-image" src="css/pictures/slide-4.png" alt="Spirited Away">
-        <img class="slide-image" src="css/pictures/slide-5.png" alt="Nausicaa and the Valley of the Wind">
-        <img class="slide-image" src="css/pictures/slide-6.jpg" alt="Howl's Moving Castle">
-      </figure>
-    </header>
+        <article class="tribute-info">
+          <h3 class="screen-reader-only">The History of Studio Ghibili</h3>
+          <p>
+            Studio, Ghibili, Inc., founded after the success of
+            <a
+              href="https://en.wikipedia.org/wiki/Nausica%C3%A4_of_the_Valley_of_the_Wind_(film)"
+              target="_blank"
+              ><cite>Nausicaä of the Valley of the Wind</cite></a
+            >
+            in 1985, is one of most acclaimed animation studios in the world,
+            having touched the hearts and minds children and adults for over
+            30-years.
+          </p>
 
-    <!-- Movies -->
-    <section id="movies">
-      <h2 class="sr-only">Studio Ghibili Movies</h2>
-      <img src="css/pictures/movie-1.jpg" alt="Spirited Away">
-      <img src="css/pictures/movie-2.jpg" alt="Totoro">
-      <img src="css/pictures/movie-3.jpg" alt="Princess Mononoke">
-      <img src="css/pictures/movie-4.jpg" alt="Grave of the Fireflies">
-      <img src="css/pictures/movie-5.jpg" alt="Ponyo">
-      <img src="css/pictures/movie-6.jpg" alt="Howl's Moving Castle">
-      <img src="css/pictures/movie-7.jpg" alt="Castle in the Sky">
-      <img src="css/pictures/movie-8.jpg" alt="Porco Rosso">
-      <img src="css/pictures/movie-9.jpg" alt="Nausicaa and the Valley of the Wind">
-      <img src="css/pictures/movie-10.jpg" alt="Kiki's Delivery Service">
-      <img src="css/pictures/movie-11.jpg" alt="The Cat Returns">
-      <img src="css/pictures/movie-12.jpg" alt="Pom Poko">
-    </section>
+          <p>
+            Headed by Hayao Miyazaki (left) and the late Isao Takahata (right),
+            the two legendary directors have worked together to create famous
+            titles such as
+            <a
+              href="https://en.wikipedia.org/wiki/Spirited_Away"
+              target="_blank"
+              ><cite>Spirited Away</cite></a
+            >,
+            <a
+              href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro"
+              target="_blank"
+              ><cite>My Neighbor Totoro</cite></a
+            >, and more recently
+            <a
+              href="https://en.wikipedia.org/wiki/The_Tale_of_the_Princess_Kaguya"
+              target="_blank"
+              ><cite>The Tale of the Princess Kaguya</cite></a
+            >.
+          </p>
 
-    <!-- Studio Ghibili Description-->
-    <section id="ghibili-description">
-      <header>
-        <h2 id="title">The Creators Who Defined a Generation</h2>
-      </header>
+          <p>
+            After previously declaring his retirement, Studio Ghibili announced
+            in February 2017 that Hayao Miyazaki will be directing a new feature
+            film slated for release in 2020 titled
+            <a
+              href="https://en.wikipedia.org/wiki/How_Do_You_Live%3F"
+              target="_blank"
+              ><cite>How Do You Live?</cite></a
+            >
+          </p>
+        </article>
+      </section>
 
-      <!-- Hayao Miyazaki Portrait -->
-      <figure id="portrait-1">
-        <img id="miyazaki-image" src="css/pictures/hayao-miyazaki.png" alt="Hayao Miyazaki">
-        <figcaption class="sr-only">A portrait picture of Studio Ghibili co-founder, Hayao Miyazaki.</figcaption>
-      </figure>
+      <!-- Footer -->
+      <footer>
+        <small
+          ><a href="http://www.ghibli.jp/" target="_blank">Studio Ghibili</a>
+          &copy; 2018</small
+        >
+      </footer>
+    </main>
+    <!-- Wrapper Ends -->
 
-      <article id="tribute-info">
-        <h3 class="sr-only">The History of Studio Ghibili</h3>
-        <p>Studio, Ghibili, Inc., founded after the success of <a id="tribute-link" href="https://en.wikipedia.org/wiki/Nausica%C3%A4_of_the_Valley_of_the_Wind_(film)" target="_blank"><cite>Nausicaä of the Valley of the Wind</cite></a> in 1985, is
-          one of most acclaimed animation studios in the world, having touched the hearts and minds children and adults for over 30-years.</p>
-
-        <p>Headed by Hayao Miyazaki (left) and the late Isao Takahata (right), the two legendary directors have worked together to create famous titles such as <a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank"><cite>Spirited Away</cite></a>,
-          <a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank"><cite>My Neighbor Totoro</cite></a>, and more recently <a href="https://en.wikipedia.org/wiki/The_Tale_of_the_Princess_Kaguya" target="_blank"><cite>The Tale of the
-              Princess Kaguya</cite></a>.</p>
-
-        <p>After previously declaring his retirement, Studio Ghibili announced in February 2017 that Hayao Miyazaki will be directing a new feature film slated for release in 2020 titled <a href="https://en.wikipedia.org/wiki/How_Do_You_Live%3F"
-            target="_blank"><cite>How Do You Live?</cite></a></p>
-      </article>
-
-      <!-- Isao Takahata Portrait -->
-      <figure id="portrait-2">
-        <img id="takahata-image" src="css/pictures/isao-takahata.png" alt="Isao Takahata">
-        <figcaption class="sr-only">A portrait picture of Studio Ghibili co-founder, Isao Takahata.</figcaption>
-      </figure>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <small><a href="http://www.ghibli.jp/" target="_blank">Studio Ghibili</a> &copy; 2018</small>
-    </footer>
-  </main>
-  <!-- Wrapper Ends -->
-
-  <script src="scripts.js"></script>
-</body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>
